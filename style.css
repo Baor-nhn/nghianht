@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 200px;
+    background: rgb(235, 231, 167);
+    width: 100%;
+}
+article{
+    min-height: 400px;
+    background: rgb(69, 124, 226);
+    width: 75%;
+    float: left;
+}
+aside{
+    min-height: 400px;
+    background: rgb(216, 211, 211);
+    width: 25%;
+    float: left;
+}
+footer{
+    background-color: rgb(177, 54, 54);
+    clear: both;
+}
+nav{
+    height: 50px;
+    background-color: rgb(50, 71, 212);
+    width: 100%;
+}

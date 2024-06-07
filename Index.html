@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 | Nguyễn Hoàng Tuấn Nghĩa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+    </style>
+</head>
+<body>
+        <div class="container">
+            <header>
+                <div class="company">THCS Tam Hòa</div>
+            </header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="Index.html">trang chủ</a></li>
+                    <li><a href="about.html">giới thiệu</a></li>
+                    <li>
+                        <a href="cackhoahoc.html">các khóa học</a>
+                        <ul>
+                            <li><a href="van.html">văn</a></li>
+                            <li><a href="toan.html">toán</a></li>
+                            <li><a href="anh.html">anh</a></li>
+                            <li><a href="ly.html">lý</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="lienHeLink">liên hệ</a></li>
+                    <li><a href="hoidap.html">hỏi đáp</a></li>
+                </ul>
+            </nav>
+            <article>
+            <h1>thông tin tuyển sinh năm học 2024-2025</h1>
+            <img src="img/santruong.png" alt="Hình ảnh trường THCS Tam Hòa">
+            <p>Năm học 2024-2025 đã tới, trường THCS Tam Hòa tuyển sinh. Tạo cho các học sinh có một môi trường học tập thật thoải mái
+                và đạt được kết quả cao trong học tập.
+            </p>
+            <div class="form-group"><input type="submit" value="Đăng ký">Tại đây</div>
+
+            </article>
+        <aside>
+            <ul class="vmenu">
+                <li>
+                    <a href="#">
+                        đội trẻ teawondo thcs tam hòa
+                        <img src="img/taewondoTamHoa.png" alt="Hình ảnh đội trẻ Taewondo Tam Hòa">
+                    </a>
+                    <p>Đội trẻ Taewondo Tam Hòa sẵn sàng chinh chiến trên mọi mặt trận. Dành Lấy vinh quang về cho trường.  </p>
+                </li>
+
+                <li>
+                    <a href="#1">
+                        chính sách mới
+                        <img src="img/tintucvetruong.png" alt="Hình ảnh sân trường THCS Tam Hòa">
+                    </a>
+                    <p>Vì lợi ích mười năm trồng cây, trăm năm trồng người, trường THCS Tam Hòa đã đứa ra những chính sách mới
+                        Nhầm cải thiện việc giảng dạy và học sinh có môi trường học tập hiệu quả hơn.</p>
+                </li>
+
+                <li>
+                    <a href="#2">
+                        lễ bế giảng năm học 2023-2024
+                        <img src="img/tintucketthucnamhoc.png" alt="Hình ảnh học sinh trường THCS Tam Hòa">
+                    </a>
+                    <p> Năm 2023-2024 đã qua, các học sinh của trường THCS Tam Hòa đã để lại những kỉ niệm đẹp dưới mái trường mến yêu.</p>
+                </li>
+            </ul>
+        </aside>
+        <footer id="footer">
+            <div>địa chỉ: kp2, p.tam hòa, thành phố biên hoà, tỉnh đồng nai</div>
+            <div>điện thoại: 091.789.2202</div>
+            <div>email: thd.bichthuy@gmail.com</div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var lienHeLink = document.getElementById('lienHeLink');
+            var footer = document.getElementById('footer');
+    
+            lienHeLink.addEventListener('click', function (event) {
+                event.preventDefault();
+    
+                footer.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script src="https://uhchat.net/code.php?f=0c0089"></script>
+</body>
+</html>

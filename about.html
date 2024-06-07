@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 | Nguyễn Hoàng Tuấn Nghĩa</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1{
+            text-align: center;
+            font-variant: small-caps;
+            color: #033E7A;
+        }
+        img{
+            height: 450px;
+            width: 800px;
+            width: 75%;
+            padding-bottom: 50px;
+            padding-right: 10px;
+            float: left;
+        }
+        .vision1 h2{
+            text-align: center;
+            color: #033E7A;
+        }
+        .vision2 h2{
+            text-align: center;
+            color: #033E7A;
+        }
+        .vision1 p{
+            font-size: 16px;
+            margin-top: -15px;
+        }
+        .vision2 p{
+            font-size: 16px;
+            margin-top: -15px;
+        }
+    </style>
+</head>
+<div class="container">
+    <header>
+        <div class="company">THCS Tam Hòa</div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="Index.html">trang chủ</a></li>
+            <li><a href="about.html">giới thiệu</a></li>
+            <li>
+                <a href="cackhoahoc.html">các khóa học</a>
+                <ul>
+                    <li><a href="van.html">văn</a></li>
+                    <li><a href="toan.html">toán</a></li>
+                    <li><a href="anh.html">anh</a></li>
+                    <li><a href="ly.html">lý</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="lienHeLink">liên hệ</a></li>
+            <li><a href="hoidap.html">hỏi đáp</a></li>
+        </ul>
+    </nav>
+<body>
+    <h1>giới thiệu trường</h1>
+    <img src="img/tuyensinh.png" alt="Hình ảnh trường THCS Tam Hòa">
+    <div class="vision1">
+    <h2>Tầm nhìn:</h2><p>Xây dựng nhà trường có uy tín, chất lượng; là trung tâm văn hóa giáo dục của địa phương; Là nơi cha mẹ học sinh luôn tin tưởng lựa chọn để con em mình học tập, rèn luyện; Là nơi đào tạo học sinh thành những con người sống có trách nhiệm, lòng nhân ái, hòa nhập tốt trong cộng đồng và luôn có khát vọng vươn lên phát huy truyền thống hiếu học; Là nơi giáo viên luôn năng động sáng tạo và vươn tới thành công với khát vọng được cống hiến.</p>
+    </div>
+
+    <div class="vision2">
+    <h2>Sứ mệnh:</h2><p>Xây dựng môi trường học tập thân thiện, nền nếp, kỷ cương, chất lượng để mỗi học sinh đều có cơ hội phát triển năng lực, phẩm chất, khả năng sáng tạo của bản thân, biết ứng xử văn hóa, giao tiếp văn minh lịch sự và thích ứng với sự phát triển của xã hội để trở thành những công dân tốt.</p>
+    </div>
+
+    <footer>
+        <div>địa chỉ: kp2, p.tam hòa, thành phố biên hoà, tỉnh đồng nai</div>
+        <div>điện thoại: 091.789.2202</div>
+        <div>email: thd.bichthuy@gmail.com</div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var lienHeLink = document.getElementById('lienHeLink');
+            var footer = document.querySelector('footer');
+    
+            lienHeLink.addEventListener('click', function (event) {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+    
+                footer.scrollIntoView({ behavior: 'smooth' }); // Cuộn trang web xuống vị trí của footer một cách mượt
+            });
+        });
+    </script>
+    <script src="https://uhchat.net/code.php?f=0c0089"></script>
+</body>
+</div>
+</html>

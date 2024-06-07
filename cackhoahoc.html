@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment | Nguyễn Hoàng Tuấn Nghĩa</title>
+    <link rel="stylesheet" href="sach.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1{
+            font-variant: small-caps;
+            text-align: center;
+            color: #033E7A;
+        }
+    </style>
+</head>
+<div class="container">
+<header>
+    <div class="company">THCS Tam Hòa</div>
+</header>
+<nav class="menu">
+    <ul>
+        <li><a href="Index.html">trang chủ</a></li>
+        <li><a href="about.html">giới thiệu</a></li>
+        <li>
+            <a href="cackhoahoc.html">các khóa học</a>
+            <ul>
+                <li><a href="van.html">văn</a></li>
+                <li><a href="toan.html">toán</a></li>
+                <li><a href="anh.html">anh</a></li>
+                <li><a href="ly.html">lý</a></li>
+            </ul>
+        </li>
+        <li><a href="#" id="lienHeLink">liên hệ</a></li>    
+        <li><a href="hoidap.html">hỏi đáp</a></li>
+    </ul>
+</nav>
+<body>
+    <h1>các khóa học</h1>
+    <div class="container">
+        <div class="tintuc">
+            <img src="img/sachvan.png" alt="Hình Ảnh sinh viên FPT">
+            <a href="#">ôn tập SGK ngữ văn 9 tập 1 </a>
+            <div class="noi-dung">
+            Ôn tập đầy đủ tất cả các chương của SGK Ngữ Văn 9 tập 1 
+            </div>
+        </div>
+    
+        <div class="tintuc">
+            <img src="img/sachtoan.png" alt="Hình Ảnh sinh viên FPT">
+            <a href="#">ôn tập SGK toán 9 tập 1</a>
+            <div class="noi-dung">
+            Ôn tập đầy đủ tất cả các chương của SGK Toán 9 tập 1
+            </div>
+        </div>
+    
+        <div class="tintuc">
+            <img src="img/sachanh.png" alt="Hình Ảnh sinh viên FPT">
+            <a href="#">ôn tập SGK tiếng anh 9 tập 1</a>
+            <div class="noi-dung">
+            Ôn tập đầy đủ tất cả các chương của SGK Tiếng Anh 9 tập 1
+            </div>
+        </div>
+
+        <div class="tintuc">
+            <img src="img/sachly.png" alt="Hình Ảnh sinh viên FPT">
+                <a href="#">ôn tập SGK Vật Lý 9 tập 1</a>
+            <div class="noi-dung">
+            Ôn tập đầy đủ tất cả các chương của SGK Vật Lý 9 tập 1
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>địa chỉ: kp2, p.tam hòa, thành phố biên hoà, tỉnh đồng nai</div>
+        <div>điện thoại: 091.789.2202</div>
+        <div>email: thd.bichthuy@gmail.com</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var lienHeLink = document.getElementById('lienHeLink');
+            var footer = document.getElementById('footer');
+
+            lienHeLink.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                footer.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script src="https://uhchat.net/code.php?f=0c0089"></script>
+</body>
+</html>
